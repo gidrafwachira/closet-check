@@ -42,7 +42,8 @@ h1,h2,.display{font-family:"Baloo 2","Nunito",sans-serif;line-height:1.1}
 
 /* ---------- Brand header ---------- */
 .brand{display:flex;flex-direction:column;align-items:center;padding:22px 0 6px}
-.brand img{width:min(260px,70vw);height:auto;border-radius:18px}
+.brand img{width:150px;height:150px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow)}
+body.form-page .brand img{width:96px;height:96px;border-radius:18px}
 .brand a{display:block}
 
 /* ---------- Landing ---------- */
