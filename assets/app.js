@@ -16,11 +16,11 @@ const CONFIG = {
 const CATALOG = {
   boys: {
     "0-12m": ["Onesies", "Rompers", "T-shirts", "Trousers", "Leggings", "Stockings", "Socks", "Mittens", "Hats",
-              "Shawls", "Dresses", "Play suits", "Suits", "Shorts", "Shirts", "Sweat pants", "Sweaters",
+              "Shawls", "Play suits", "Suits", "Shorts", "Shirts", "Sweat pants", "Sweaters",
               "Sweatshirts", "Matchy sets", "Pyjamas"],
-    "1-12y": ["Sweaters", "T-shirts", "Tops", "Shorts", "Shirts", "Blouse", "Jackets", "Half coat", "Denim jacket",
-              "Skirts", "Leggings", "Jeans", "Khakis", "Sweat pants", "Sweatshirts", "Dresses", "Matchy sets",
-              "Knitted sweaters", "Dungarees", "Pyjamas", "Panties", "Bikers"]
+    "1-12y": ["Sweaters", "T-shirts", "Tops", "Shorts", "Shirts", "Jackets", "Half coat", "Denim jacket",
+              "Leggings", "Jeans", "Khakis", "Sweat pants", "Sweatshirts", "Matchy sets",
+              "Knitted sweaters", "Dungarees", "Pyjamas", "Boxers", "Bikers"]
   },
   girls: {
     "0-12m": ["Onesies", "Rompers", "T-shirts", "Trousers", "Leggings", "Stockings", "Socks", "Mittens", "Hats",
