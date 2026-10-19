@@ -113,12 +113,18 @@ function renderChild(c, i) {
   card.append(ageField);
 
   const size = el("input", { type: "text", placeholder: "e.g. 3–4 yrs", value: c.size });
-  size.addEventListener("input", e => c.size = e.target.value.trim());
+  const sizeField = el("label", { class: "field" + (c._sizeErr ? " invalid" : "") },
+    el("span", {}, "Clothing size ", el("span", { class: "req", text: "*" })), size,
+    el("div", { class: "err", text: "Please add a clothing size." }));
+  size.addEventListener("input", e => {
+    c.size = e.target.value.trim();
+    if (c.size) { c._sizeErr = false; sizeField.classList.remove("invalid"); }
+  });
   const shoe = el("input", { type: "text", placeholder: "e.g. 26", value: c.shoe });
   shoe.addEventListener("input", e => c.shoe = e.target.value.trim());
   card.append(el("div", { class: "row2" },
-    el("label", { class: "field" }, el("span", {}, "Clothing size"), size),
-    el("label", { class: "field" }, el("span", {}, "Shoe size"), shoe)));
+    sizeField,
+    el("label", { class: "field" }, el("span", {}, "Shoe size ", el("span", { class: "opt", text: "(optional)" })), shoe)));
 
   const items = el("div", { class: "items" });
   if (!c.age) {
@@ -221,9 +227,13 @@ function validate() {
   mark("f-name", $("#parentName").value.trim().length > 1);
   mark("f-phone", $("#parentPhone").value.replace(/\D/g, "").length >= 9);
 
-  let ageMissing = false;
-  children.forEach(c => { c._ageErr = !c.age; if (!c.age) ageMissing = true; });
-  if (ageMissing) {
+  let childMissing = false;
+  children.forEach(c => {
+    c._ageErr = !c.age;
+    c._sizeErr = !c.size;
+    if (c._ageErr || c._sizeErr) childMissing = true;
+  });
+  if (childMissing) {
     renderChildren();
     if (!first) first = document.querySelector(".child .field.invalid");
   }
