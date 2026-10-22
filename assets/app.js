@@ -15,19 +15,19 @@ const CONFIG = {
    ===================================================================== */
 const CATALOG = {
   boys: {
-    "0-12m": ["Onesies", "Rompers", "T-shirts", "Trousers", "Leggings", "Stockings", "Socks", "Mittens", "Hats",
+    "0-12m": ["Onesies", "Rompers", "T-shirts", "Trousers", "Stockings", "Socks", "Mittens", "Hats",
               "Shawls", "Play suits", "Suits", "Shorts", "Shirts", "Sweat pants", "Sweaters",
               "Sweatshirts", "Matchy sets", "Pyjamas"],
-    "1-12y": ["Sweaters", "T-shirts", "Tops", "Shorts", "Shirts", "Jackets", "Half coat", "Denim jacket",
-              "Leggings", "Jeans", "Khakis", "Sweat pants", "Sweatshirts", "Matchy sets",
-              "Knitted sweaters", "Dungarees", "Pyjamas", "Boxers", "Bikers"]
+    "1-12y": ["Sweaters", "T-shirts", "Shorts", "Shirts", "Jackets", "Half coat", "Denim jacket",
+              "Jeans", "Khakis", "Sweatshirts", "Matchy sets", "Knitted sweaters", "Dungarees",
+              "Pyjamas", "Boxers", "Bikers", "Socks"]
   },
   girls: {
     "0-12m": ["Onesies", "Rompers", "T-shirts", "Trousers", "Leggings", "Stockings", "Socks", "Mittens", "Hats",
-              "Shawls", "Dresses", "Play suits", "Suits", "Shorts", "Shirts", "Sweat pants", "Sweaters",
+              "Shawls", "Dresses", "Play suits", "Suits", "Shorts", "Sweat pants", "Sweaters",
               "Sweatshirts", "Matchy sets", "Pyjamas"],
-    "1-12y": ["Sweaters", "T-shirts", "Tops", "Shorts", "Shirts", "Blouse", "Jackets", "Half coat", "Denim jacket",
-              "Skirts", "Leggings", "Jeans", "Khakis", "Sweat pants", "Sweatshirts", "Dresses", "Matchy sets",
+    "1-12y": ["Sweaters", "T-shirts", "Tops", "Shorts", "Blouse", "Jackets", "Half coat", "Denim jacket",
+              "Skirts", "Leggings", "Jeans", "Khakis", "Sweatshirts", "Dresses", "Matchy sets",
               "Knitted sweaters", "Dungarees", "Pyjamas", "Panties", "Bikers"]
   }
 };
