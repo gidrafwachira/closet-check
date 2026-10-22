@@ -20,7 +20,7 @@ const CATALOG = {
               "Sweatshirts", "Matchy sets", "Pyjamas"],
     "1-12y": ["Sweaters", "T-shirts", "Shorts", "Shirts", "Jackets", "Half coat", "Denim jacket",
               "Jeans", "Khakis", "Sweatshirts", "Matchy sets", "Knitted sweaters", "Dungarees",
-              "Pyjamas", "Boxers", "Bikers", "Socks"]
+              "Pyjamas", "Boxers", "Socks"]
   },
   girls: {
     "0-12m": ["Onesies", "Rompers", "T-shirts", "Trousers", "Leggings", "Stockings", "Socks", "Mittens", "Hats",
